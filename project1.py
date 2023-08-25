@@ -33,16 +33,16 @@ while max(players_scores) < max_score:
         print("Your total score is:", players_scores[player_idx], "\n")
 
 
+        while True:
+            should_play = input("do you want to play (y)? ")
+            if should_play.lower() != "y":
+                break
 
-        should_play = input("do you want to play (y)? ")
-        if should_play.lower() != "y":
-            break
+            value = roll()
 
-        value = roll()
-
-        if value == 1:
-            print("Its 1, try again")
-            current_score = 0
-            break
-        else:
-            current_score += value
+            if value == 1:
+                print("Its 1, try again")
+                current_score = 0
+                break
+            else:
+                current_score += value
