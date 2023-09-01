@@ -7,5 +7,6 @@ for i in enumerate(expenses_year):
         print("True")
 
 expenses_year.append(1980)
+45
 expenses_year[2] -= 200
 print(expenses_year)
