@@ -1,10 +1,20 @@
-class Solution:
-    def twoSum(self, nums:[], target: int):
-        for op1 in enumerate(self.nums):
-            for op2 in enumerate(self.nums):
-                if op1 + op2 == target:
-                    return [nums.index(op1), nums.index(op2)]
-                else:
-                    return "does not contain such elements"
-    
-    print(twoSum([2, 4, 5, 6], 6))
+class Student:
+    def __init__(self, name, house):
+        self.name = name
+        self.house = house
+
+
+def main():
+    student = get_student()
+    print(student)
+
+
+
+def get_student():
+    name = input("Name: ")
+    house = input("House: ")
+    student = Student(name, house)
+    return student
+
+if __name__ == "__main__":
+    main()
